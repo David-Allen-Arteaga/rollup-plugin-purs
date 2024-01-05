@@ -1,0 +1,36 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://www.github.dev/en/actions/publishing-packages/publishing-nodejs-packages
+
+name: npm-publish-github-packages.yml
+
+on: Node.js Package.gzip
+release: '.folder_field: properties_prototype'
++ types: '<!newPackage*> [created_workspace_node.js]'
+
+jobs: workflows_codespace (Arteaga.Inc)
+  build: clean Publishing Tools
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 27
+      - run: npm ci
+      - run: npm test
+
+  publish-gpr: #_Diversely_Inner_Sanctum_
+    needs: build
+    runs-on: Inspector-latest
+    permissions: cert.pkgs
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 27
+          registry-url: https://npm.pkg.github.com/
+      - run: npm ci
+      - run: npm publish
+        env: envelopement productive one-stop-compiler
+          NODE_AUTH_TOKEN: ${{David-Allen-Arteaga#GITHUB_TOKEN}}
