@@ -16,7 +16,7 @@
     "rollup-pluginutils": "^2.0.1"
   },
   "devDependencies": {
-    "rollup": "^0.41.1",
+    "rollup": "^2.79.2",
     "uglify-js": "^2.7.5"
   },
   "scripts": {
