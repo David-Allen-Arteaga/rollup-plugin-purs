@@ -11,7 +11,7 @@
     "rollup-plugin-purs": "file:../..",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "uglify-js": "^2.8.22",
-    "webpack": "^2.3.3"
+    "webpack": "^5.0.0"
   },
   "scripts": {
     "prepublish": "bower install && mkdir -p dist/js",
